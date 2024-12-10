@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  color: inherit;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background: #ffe6f0;
+  color: #333;
+  font-family: 'Arial', 'Apple SD Gothic Neo', sans-serif;
+  line-height: 1.6;
+}
+
+button,
+input {
+  background: transparent;
+  border: none;
+  font: inherit;
+  padding: 0;
+  width: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.add-input {
+  padding: 0.5em 1em;
+  border: 1px solid #ffcce0;
+  border-radius: 4px;
+  background: #fff;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+.add-input:focus {
+  outline: none;
+  border-color: #ff99c2;
+  box-shadow: 0 0 5px rgba(255, 153, 194, 0.5);
+}
+
+.app {
+  width: 90%;
+  max-width: 400px;
+  background: #fff;
+  border: 1px solid #ffe6f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.add-button {
+  border: 1px solid #ff99c2;
+  padding: 10px 15px;
+  border-radius: 4px;
+  background: #ff99c2;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-button:hover {
+  background-color: #ff6699;
+  transform: scale(1.05);
+}
+
+li {
+  font-size: 1.25em;
+  list-style: none;
+  color: #555;
+}
+
+.strike {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.delete-button {
+  font-size: 0.9rem;
+  border: 1px solid #ff4d6a;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: #ff4d6a;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delete-button:hover {
+  background: #e63950;
+  transform: scale(1.1);
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.task {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background: #ffe6f0;
+  padding: 10px;
+  border: 1px solid #ffccdd;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.task:hover {
+  transform: translateY(-3px);
+}
